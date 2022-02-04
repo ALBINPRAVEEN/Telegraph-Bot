@@ -27,7 +27,7 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: bot run
       run: |
-        python3 main.py
+        python3 webot.py
       env:
         APP_ID: ${{ secrets.APP_ID }}
         API_HASH: ${{ secrets.API_HASH }}
